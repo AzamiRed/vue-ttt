@@ -1,0 +1,6 @@
+<div :class="['square',
+  player === 1 ? `square__${elem}` : '', 
+  player === 2 ? `square__${oppElem}` : '', 
+  isClicked ? 'square__isClicked' : '',
+  !isActive ? ' square__isBlocked' : '']"
+  @click.native="changeSquare" /> 

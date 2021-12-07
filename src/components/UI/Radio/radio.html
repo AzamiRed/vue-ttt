@@ -1,0 +1,11 @@
+<label :for="elem">
+  <input 
+    type="radio" 
+    class="radio `radio__${elem}`" 
+    :id="elem" 
+    :name="elem" 
+    :value="elem"
+    @click.native="onClick"
+    @input="onInput" >
+  {{title}}
+</label>

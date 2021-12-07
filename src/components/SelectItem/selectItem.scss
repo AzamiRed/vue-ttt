@@ -1,0 +1,51 @@
+@import '../../assets/style/style.scss';
+
+.selectItem {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+
+  &__header {
+    font: 700 98px/107px 'Bangers', cursive; 
+  }
+
+  &__selectEl {
+    display: flex;
+  }
+
+  &__radio {
+    margin: 5px
+  }
+
+  &__radioInput {
+    display: none;
+  }
+
+  &__radioLabel {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    border: 5px solid #000;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    background: rgb(226, 210, 156);
+    margin-right: 0;
+    line-height: 18px;
+    user-select: none;
+  }
+
+  &__radioLabel::before {
+    content: "";
+    display: inline-block;
+    width: 17px;
+    height: 18px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background: rgb(158, 158, 158) 0 0 no-repeat;
+  }
+}

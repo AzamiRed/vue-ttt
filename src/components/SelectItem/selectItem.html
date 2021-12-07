@@ -1,0 +1,11 @@
+<div class="selectItem">
+  <h1 class="selectItem__header">Выберите знак:</h1>
+  <div class="selectItem__selectEl">
+    <div class="selectItem__radio" v-for="item in items" :key="item.el">
+      <label :for="item.el" class="selectItem__radioLabel" >
+        <input type="radio" class="selectItem__radioInput" :id="item.el" @input="setPlayerItem(item.el, item.oppEl)" @click="isSelectedItem = true" name="ttt" :value="item.el"/>
+        <div class="selectItem__radio--checked" />
+      </label>
+    </div> 
+  </div>
+</div>

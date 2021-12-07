@@ -1,0 +1,18 @@
+@import '../../assets/style/style.scss';
+
+.playingField {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__head {
+    font: 700 98px/107px 'Bangers', cursive;
+    margin-bottom: 40px;
+  }
+
+  &__game {
+    display: flex;
+    width: 630px;
+    flex-wrap: wrap;
+  }
+}

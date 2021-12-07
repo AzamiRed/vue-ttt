@@ -1,0 +1,3 @@
+<SelectItem @onChoice="saveItems" v-if="!isSelectedItem" />
+<PlayingField :playerEl="playerItem" :oppEl="opponentItem" v-else />
+<GameInfo :title="winner === 1 ? 'Вы выиграли!' : 'Вы проиграли!'" :isShow="isPlay" />

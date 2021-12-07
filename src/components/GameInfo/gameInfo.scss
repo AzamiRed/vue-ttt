@@ -1,0 +1,59 @@
+@import '../../assets/style/style.scss';
+
+.gameInfo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(5px);
+  background: transparent;
+  height: 100%;
+
+  &__wrapper {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0;   
+    background-color: #fff;
+    border: 5px solid #000; 
+    margin: 11% 0 0 0;
+  }
+
+  &__title {
+    font: 700 98px/107px 'Bangers', cursive;
+  }
+
+  &__button {
+    background-color: #fff;
+    padding: 10px 16px;
+    border: 5px solid #000;
+    border-radius: 10px;
+    font: 500 20px/28px 'Carter One', cursive;;
+    outline: none;
+  }
+}
+
+.gameInfo-enter,
+.gameInfo-enter-active {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gameInfo-enter-to {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.gameInfo-leave {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.gameInfo-leave-to {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}

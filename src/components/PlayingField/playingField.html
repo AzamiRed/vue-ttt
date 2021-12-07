@@ -1,0 +1,14 @@
+<div class="playingField">
+  <h1 class="playingField__head">Вы выбрали элемент - {{playerEl}}</h1>
+  <div class="playingField__game">
+    <Square v-for="square in squares"
+      @onActive="changeActive"
+      :key="square.id"
+      :id="square.id"
+      :isActive="!isOppMove"
+      :elem="playerEl"
+      :oppElem="oppEl"
+      :player="square.player"
+      :isClicked="square.isClicked" />
+  </div>
+</div>

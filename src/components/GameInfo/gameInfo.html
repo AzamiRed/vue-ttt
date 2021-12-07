@@ -1,0 +1,10 @@
+<transition name="gameInfo">
+  <section class="gameInfo" v-if="isShow">
+    <div class="gameInfo__wrapper">
+      <div class="gameInfo__title">{{title}}</div>
+      <div class="gameInfo__buttons">
+        <button class="gameInfo__button" @click.native="changeGameStatus">Сыграть заново</button>
+      </div>
+    </div>
+  </section>
+</transition>
